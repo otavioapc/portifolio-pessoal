@@ -1,6 +1,6 @@
 /*Geral*/
 
-body{
+body {
     background: #003062;
     margin: 0;
     padding: 0;
@@ -9,28 +9,43 @@ body{
 
 /*NavBar*/
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
     border-bottom: 3px solid #ff184c;
+    /*Fixar na tela*/
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    width: 100%;     /* Ocupa toda a largura */
+    z-index: 10;
+    background: #003062;
+    box-sizing: border-box;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     list-style: none;
 }
 
-.nav-links a{
-    font-size: 18px;
+.nav-links a {
+    font-size: 20px;
     text-decoration: none;
     color: #ffccdc;
+}
+
+.nav-links li{
     margin-right: 40px;
 }
 
-#logo-site{
-    width: 50px;
-    height: 50px;
-    background-color: white;
+.nav-links li:last-child{
+    margin-right: 0;
 }
+
+#logo-site img {
+    width: 300px;
+    height: auto;
+}
+
