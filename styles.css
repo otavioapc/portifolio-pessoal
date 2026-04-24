@@ -1,10 +1,36 @@
 /*Geral*/
 
 body{
-    font-family: 'Exo 2', sans-serif;
     background: #003062;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
 }
 
-#barra-navegacao li{
-    color: #ff184c;
+/*NavBar*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 3px solid #ff184c;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffccdc;
+    margin-right: 40px;
+}
+
+#logo-site{
+    width: 50px;
+    height: 50px;
+    background-color: white;
 }
