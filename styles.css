@@ -17,10 +17,11 @@ body {
     padding: 20px 5%;
     border-bottom: 3px solid #ff184c;
     /*Fixar na tela*/
-    position: fixed; 
-    top: 0;          
-    left: 0;         
-    width: 100%;     /* Ocupa toda a largura */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ocupa toda a largura */
     z-index: 10;
     background: #003062;
     box-sizing: border-box;
@@ -37,11 +38,11 @@ body {
     color: #ffccdc;
 }
 
-.nav-links li{
+.nav-links li {
     margin-right: 40px;
 }
 
-.nav-links li:last-child{
+.nav-links li:last-child {
     margin-right: 0;
 }
 
@@ -50,3 +51,43 @@ body {
     height: auto;
 }
 
+/*Main*/
+
+.full-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/*Home Container*/
+
+#home-container {
+    height: calc(100vh - 98.4px);
+    justify-content: center;
+    align-items: center;
+}
+
+#picture-home {
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+    border-radius: 50%;
+    border: 4px solid #0a9cf5;
+    background-image: url('img/foto-otavio.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+#text-home {
+    color: #ffccdc;
+    line-height: 25px;
+}
+
+#text-home h1 {
+    color: #ff184c;
+    font-size: 50px;
+}
+
+#text-home p {
+    font-size: 20px;
+}
