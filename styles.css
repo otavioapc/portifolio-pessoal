@@ -188,3 +188,11 @@ button:hover{
     font-size: 1rem;
     letter-spacing: 1px;
 }
+
+/*Projects container*/
+
+.project-card{
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+}
