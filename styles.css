@@ -235,7 +235,7 @@ button:hover{
 }
 
 #projects-container .project-details h2 {
-    color: #ff184c;
+    color: #003062;
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 1.5rem;
@@ -244,6 +244,7 @@ button:hover{
 
 .project-details p {
     line-height: 1.4;
+    text-align: justify;
 }
 
 .project-skills p {
@@ -252,6 +253,7 @@ button:hover{
     font-size: 0.90rem;
     margin-bottom: 8px;
     text-transform: uppercase;
+    text-justify: inter-word;
 }
 
 .project-skills span {
@@ -270,7 +272,6 @@ button:hover{
     width: 100%;
     height: 230px;
     object-fit: cover;
-    object-position: top;
     border-bottom: 2px solid #003062;
 }
 
@@ -280,5 +281,4 @@ button:hover{
     padding: 10px;
     margin-left: 10px;
 }
-
 
