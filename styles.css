@@ -58,17 +58,18 @@ a {
 }
 
 #logo-site img {
-    width: 300px;
+    max-width: 300px;
     height: auto;
 }
 
 /*Main*/
 
 .full-page {
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    height: auto;
     display: flex;
-    height: calc(100vh - 98.4px);
+    min-height: calc(100vh - 98.4px);
+    box-sizing: border-box;
 }
 
 /*Home Container*/
@@ -79,8 +80,8 @@ a {
 }
 
 #picture-home {
-    width: 400px;
-    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
     margin-right: 100px;
     border-radius: 50%;
     border: 4px solid #0a9cf5;
@@ -109,7 +110,7 @@ a {
 }
 
 #text-about {
-    width: 700px;
+    max-width: 700px;
 }
 
 #text-about p {
@@ -154,14 +155,16 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .skill-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
+    min-width: 120px;
     padding: 15px;
     margin: 10px;
     text-align: center;
@@ -215,7 +218,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 520px;
+    min-height: 520px;
     background-color: #0a9cf5;
     border: none;
     clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%, 0% 10px);
@@ -274,14 +277,14 @@ button:hover {
 
 .project-img img {
     width: 100%;
-    height: 230px;
+    height: 14.375rem;
     object-fit: cover;
     border-bottom: 2px solid #003062;
 }
 
 #projects-container button {
     background-color: #ff184c;
-    width: 45%;
+    max-width: 45%;
     padding: 10px;
     margin-left: 10px;
 }
@@ -379,4 +382,78 @@ input::placeholder, textarea::placeholder {
     color: #ffccdc;
     padding-bottom: 20px;
     font-size: 1.2rem;
+}
+
+/*Media-Query Responsividade das Telas*/
+
+/*Tablet*/
+@media (max-width: 1024px) {
+
+    /*Problema das seções se invadindo*/
+    .full-page {
+        height: auto;      
+        min-height: 100vh;            
+        padding-bottom: 50px;             
+        flex-direction: column;      
+    }
+    
+    #home-container, #about-container, #stacks-container, #projects-container, #contacts-container {
+        width: 100vw;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    /*Home*/
+    #home-container{
+        padding-top: 50px;  
+    }
+
+    #text-home{
+        text-align: center;
+        width: 80%;
+    }
+
+    #picture-home {
+        margin-right: 0;              
+        margin-bottom: 20px;         
+    }
+
+    /*Sobre*/
+    #text-about{
+        width: 80%;
+    }
+
+    /*Projetos */
+    #projects-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .project-card {
+        height: auto;  
+        min-height: 520px;            
+        width: 60%;        
+        margin: 0 !important;        
+    }
+
+    /*Contatos*/
+    #contacts-card-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    #forms-card {
+        width: 60%;
+        order: 1; 
+    }
+
+    #social-media-card{
+        order: 2;
+    }
+
+
 }
