@@ -455,5 +455,26 @@ input::placeholder, textarea::placeholder {
         order: 2;
     }
 
+}
 
+/*Mobile*/
+@media(max-width: 768px){
+
+    #picture-home{
+        min-width: 350px;
+    }
+
+    #text-home h1{
+        font-size: 32px;
+    }
+
+    .project-card {
+        width: 95% !important;
+        min-height: auto !important;
+    }
+
+    #projects-container button {
+        max-width: 80% !important; 
+        margin: 20px 10px !important;
+    }
 }
