@@ -1,5 +1,10 @@
 /*Geral*/
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 98.4px;
+}
+
 body {
     background: #003062;
     margin: 0;
