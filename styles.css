@@ -114,6 +114,8 @@ a {
 
 #text-about p {
     font-size: 18px;
+    text-align: justify;
+    line-height: 1.8rem;
 }
 
 #text-about h2 {
@@ -297,8 +299,9 @@ button:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10rem;
+    margin-top: 50px;
 }
 
 #social-media-card {
@@ -367,4 +370,13 @@ input::placeholder, textarea::placeholder {
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
+}
+
+/*Footer*/
+
+#footer-container{
+    text-align: center;
+    color: #ffccdc;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
 }
