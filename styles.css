@@ -9,13 +9,14 @@ body {
 }
 
 h1,
-h2{
+h2 {
     color: #ff184c;
 }
 
-p, 
+p,
 li,
-a{
+h3,
+a {
     color: #ffccdc;
 }
 
@@ -107,19 +108,19 @@ a{
     align-items: center;
 }
 
-#text-about{
+#text-about {
     width: 700px;
 }
 
-#text-about p{
+#text-about p {
     font-size: 18px;
 }
 
-#text-about h2{
-    text-align: center  ;
+#text-about h2 {
+    text-align: center;
 }
 
-button{
+button {
     font-family: 'Exo 2', sans-serif;
     background-color: #0a9cf5;
     color: #003062;
@@ -132,8 +133,8 @@ button{
     transition: 0.3s;
 }
 
-button:hover{
-    background: #ff184c; 
+button:hover {
+    background: #ff184c;
     color: #ffccdc;
     transform: translateX(5px);
     box-shadow: -5px 0px 0px #0a9cf5;
@@ -147,14 +148,14 @@ button:hover{
     align-items: center;
 }
 
-.skills-container{
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 1000px;
 }
 
-.skill-card{
+.skill-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,17 +174,17 @@ button:hover{
 }
 
 .skill-card img {
-    width: 50px;        
+    width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
 
-#stacks-container h2{
+#stacks-container h2 {
     margin-top: 50px;
 }
 
-.skill-card p{
-    color: #ffccdc; 
+.skill-card p {
+    color: #ffccdc;
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -191,23 +192,24 @@ button:hover{
 
 /*Projects container*/
 
-#projects-container h2{
+#projects-container h2,
+#contacts-container h2 {
     margin-top: 50px;
 }
 
-#projects-container{
+#projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#projects-list{
+#projects-list {
     display: flex;
     justify-content: space-around;
     gap: 30px;
 }
 
-.project-card{
+.project-card {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -222,15 +224,15 @@ button:hover{
     transform: translateY(-5px);
 }
 
-.project-card:first-child{
+.project-card:first-child {
     margin-left: 40px;
 }
 
-.project-card:last-child{
+.project-card:last-child {
     margin-right: 40px;
 }
 
-.project-details{
+.project-details {
     margin: 0 10px;
 }
 
@@ -248,7 +250,8 @@ button:hover{
 }
 
 .project-skills p {
-    color: #003062; /* Azul Celeste */
+    color: #003062;
+    /* Azul Celeste */
     font-weight: 600;
     font-size: 0.90rem;
     margin-bottom: 8px;
@@ -265,20 +268,104 @@ button:hover{
     font-size: 0.75rem;
     margin-right: 5px;
     margin-bottom: 5px;
-    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%); 
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
 }
 
-.project-img img{
+.project-img img {
     width: 100%;
     height: 230px;
     object-fit: cover;
     border-bottom: 2px solid #003062;
 }
 
-#projects-container button{
+#projects-container button {
     background-color: #ff184c;
     width: 30%;
     padding: 10px;
     margin-left: 10px;
 }
 
+/*Contacts container*/
+
+#contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts-card-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+#social-media-card {
+    text-align: center;
+}
+
+.social-media-icon {
+    background-color: #0a9cf5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.social-media-icon:hover{
+    transform: translateY(-5px);
+}
+
+.social-media-icon a img {
+    width: 50px;
+    height: auto;
+}
+
+#forms-card{
+    width: 400px;
+    height: auto;
+}
+
+#forms-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+#forms-card form input {
+    all: unset;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    font-family: 'Exo 2', sans-serif;
+    border-bottom: 2px solid #ff184c;
+    color: #ffccdc;
+}
+
+#forms-card form textarea{
+    all: unset;
+    border-bottom: 2px solid #ff184c;
+    word-wrap: break-word;
+    field-sizing: content;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    color: #ffccdc;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ffccdc;
+    opacity: 1; 
+}
+
+#forms-card button{
+    background-color: #ff184c;
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
