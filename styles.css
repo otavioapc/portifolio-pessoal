@@ -251,7 +251,6 @@ button:hover {
 
 .project-skills p {
     color: #003062;
-    /* Azul Celeste */
     font-weight: 600;
     font-size: 0.90rem;
     margin-bottom: 8px;
@@ -280,7 +279,7 @@ button:hover {
 
 #projects-container button {
     background-color: #ff184c;
-    width: 30%;
+    width: 45%;
     padding: 10px;
     margin-left: 10px;
 }
